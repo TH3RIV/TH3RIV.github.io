@@ -52,19 +52,3 @@ img {
 .attribution a {
     color: hsl(228, 45%, 44%);
 }
-
-@media (min-width: 1441px) {
-    body {
-        background-color: white;
-    }
-
-    main {
-        max-width: 1440px;
-        margin: 6.5rem auto;
-        padding: 0 0 7.5rem 0;
-    }
-
-    .container-fluid {
-        margin-top: 7.5rem;
-    }
-}
