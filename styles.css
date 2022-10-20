@@ -39,14 +39,14 @@ nav {
     cursor: pointer;
 }
 
-#fluid {
+/* #fluid {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
     background-color: rgb(91, 105, 119);
     margin-bottom: 25px;
-}
+} */
 
 .main-info {
     border-bottom: 1px solid #a7a1a1;
