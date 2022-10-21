@@ -1,8 +1,8 @@
-#fontOne {
+.fontOne {
     font-family: 'Fraunces', serif;
 }
 
-#fontTwo {
+.fontTwo {
     font-family: 'Montserrat', sans-serif;
     color: hsl(228, 12%, 48%);
 }
@@ -42,14 +42,14 @@ p {
     font-size: 14px;
 }
 
-.tag {
+#tag {
     text-transform: uppercase;
     letter-spacing: 5px;
     padding: 20px 20px 0 20px;
     font-size: 12px;
 }
 
-.description {
+#description {
     font-size: 14px;
     padding: 15px 35px 0 20px;
 }
@@ -69,12 +69,12 @@ li {
     margin: 0;
 }
 
-.priceOne {
+#priceOne {
     color: hsl(158, 36%, 37%);
     font-size: 2rem;
 }
 
-.priceTwo {
+#priceTwo {
     text-decoration: line-through;
     font-size: 13px;
 }
