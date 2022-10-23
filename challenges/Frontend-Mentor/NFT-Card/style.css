@@ -1,0 +1,152 @@
+body {
+    font-family: 'Outfit', sans-serif;
+    background-color: hsl(217, 54%, 11%);
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+
+img {
+    max-width: 100%;
+}
+
+h1 {
+    font-weight: 600;
+    font-size: 22px;
+    padding: 1.75rem 0 .75rem 0;
+}
+
+p {
+    color: hsl(215, 51%, 70%);
+    font-size: 18px;
+    font-weight: 300;
+}
+
+ul,
+li {
+    display: flex;
+    list-style: none;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    color: hsl(0, 0%, 100%);
+    text-decoration: none;
+}
+
+a:hover {
+    color: hsl(178, 100%, 50%);
+}
+
+.card {
+    background-color: hsl(216, 50%, 16%);
+    position: relative;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    width: 100%;
+    max-width: 325px;
+    margin: 8rem auto 8rem auto;
+    padding: 1.5rem;
+    padding-bottom: 1rem;
+    border-radius: 15px;
+}
+
+.nft-image {
+    border-radius: 10px;
+    position: relative;
+}
+
+.nft-image-overlay {
+    position: absolute;
+    top: 4.25%;
+    bottom: 0;
+    left: 7.5%;
+    right: 0;
+    height: 49%;
+    width: 85.5%;
+    opacity: 0;
+    transition: .3s ease;
+    background-color: hsl(178, 100%, 50%);
+    border-radius: 10px;
+}
+
+.nft-icon {
+    position: absolute;
+    top: 40%;
+    bottom: 0;
+    left: 42.5%;
+    right: 0;
+}
+
+.nft-image-overlay:hover {
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+.icons {
+    max-height: 45%;
+    position: relative;
+    transform: translateY(-45%);
+    margin-right: .45rem;
+}
+
+.creator {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 0;
+    padding: 1rem 0 0 0;
+    border-top: 1px solid hsl(215, 32%, 27%);
+}
+
+.creator-img {
+    max-height: 32px;
+    margin-right: 1rem;
+    position: relative;
+    transform: translateY(-15%);
+    border: 1px solid hsl(0, 0%, 100%);
+    border-radius: 50%;
+}
+
+.attribution {
+    color: hsl(0, 0%, 69%);
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(49, 84%, 40%);
+}
+
+#eth {
+    color: hsl(178, 100%, 50%);
+    font-weight: 600;
+}
+
+@media screen and (min-width: 1200px) {
+    .card {
+        max-width: 350px;
+    }
+
+    .nft-image-overlay {
+        position: absolute;
+        top: 4.1%;
+        bottom: 0;
+        left: 7%;
+        right: 0;
+        height: 51%;
+        width: 86%;
+        opacity: 0;
+        transition: .3s ease;
+        background-color: hsl(178, 100%, 50%);
+        border-radius: 10px;
+    }
+}
