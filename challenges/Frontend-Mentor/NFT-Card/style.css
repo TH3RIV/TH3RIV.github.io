@@ -111,7 +111,7 @@ a:hover {
     max-height: 32px;
     margin-right: 1rem;
     position: relative;
-    transform: translateY(-15%);
+    transform: translateY(-25%);
     border: 1px solid hsl(0, 0%, 100%);
     border-radius: 50%;
 }
