@@ -1,0 +1,147 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Karla', sans-serif;
+    font-size: 16px;
+    background-color: hsl(204, 43%, 93%);
+}
+
+main {
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-fluid {
+    width: 100%;
+    max-width: 325px;
+    margin: 0 auto;
+    padding: 0;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+/* Sections */
+.tab1 {
+    background-color: white;
+    padding: 30px;
+}
+
+.tab2 {
+    background-color: hsl(179, 62%, 43%);
+    padding: 30px;
+}
+
+.price {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+.monthPrice {
+    font-size: 30px;
+    font-weight: 700;
+    margin-right: 5%;
+}
+
+button {
+    background-color: hsl(71, 73%, 54%);
+    color: hsl(204, 43%, 93%);
+    font-weight: 700;
+    font-size: 18px;
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 0;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: hsl(71, 73%, 44%);
+}
+
+.tab3 {
+    background-color: hsl(179, 50%, 50%);
+    padding: 30px;
+}
+
+.perks {
+    margin: 0;
+    padding: 10px 0 0 0;
+}
+
+ul,
+li {
+    list-style: none;
+}
+
+/* Headings */
+.heading1 {
+    color: hsl(179, 62%, 43%);
+    font-weight: 700;
+    font-size: 22px;
+    padding-bottom: 5px;
+}
+
+.heading2 {
+    color: white;
+    font-weight: 700;
+    font-size: 19px;
+}
+
+h2 {
+    color: hsl(71, 73%, 54%);
+    font-weight: 700;
+    font-size: 19px;
+    margin: 0 0 10px 0;
+    padding: 0;
+}
+
+/* Text */
+.grayText {
+    color: hsl(218, 22%, 67%);
+}
+
+.lightGrayText {
+    color: hsl(204, 43%, 93%);
+}
+
+.whiteText {
+    color: white;
+}
+
+/* Footer */
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+@media screen and (min-width: 768px) {
+    .container-fluid {
+        max-width: 650px;
+        margin: auto;
+        border-radius: 10px;
+    }
+
+    .tab1 {
+        padding: 45px;
+    }
+
+    .tab2 {
+        padding: 45px;
+    }
+
+    .tab3 {
+        padding: 45px;
+    }
+}
