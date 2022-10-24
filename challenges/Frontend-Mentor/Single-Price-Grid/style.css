@@ -55,6 +55,10 @@ button {
     margin-top: 10px;
 }
 
+button:hover {
+    background-color: hsl(71, 73%, 44%);
+}
+
 .tab3 {
     background-color: hsl(179, 50%, 50%);
     padding: 30px;
