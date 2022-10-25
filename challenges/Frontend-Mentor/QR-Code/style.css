@@ -4,11 +4,10 @@ body {
 }
 
 main {
-    display: grid;
+    height: 90vh;
+    display: flex;
     align-items: center;
     justify-content: center;
-    background-color: hsl(212, 45%, 89%);
-    padding-bottom: 14rem;
 }
 
 h1 {
@@ -32,8 +31,7 @@ p {
     justify-content: center;
     background-color: hsl(0, 0%, 100%);
     width: 325px;
-    margin: auto;
-    margin-top: 13rem;
+    margin: 0 auto;
     padding: 0;
     border-radius: 20px;
 }

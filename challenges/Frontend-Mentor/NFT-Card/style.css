@@ -1,10 +1,18 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
 body {
     font-family: 'Outfit', sans-serif;
     background-color: hsl(217, 54%, 11%);
-    display: grid;
+}
+
+main {
+    height: 90vh;
+    display: flex;
     align-items: center;
     justify-content: center;
-    margin: auto;
 }
 
 img {
@@ -52,7 +60,7 @@ a:hover {
     height: auto;
     width: 100%;
     max-width: 325px;
-    margin: 8rem auto 8rem auto;
+    margin: 0 auto;
     padding: 1.5rem;
     padding-bottom: 1rem;
     border-radius: 15px;
