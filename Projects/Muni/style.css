@@ -7,18 +7,14 @@ body {
     background: url("images/background.jpg");
     object-fit: cover;
     background-attachment: fixed;
-    font-family: 'Comfortaa', cursive;
+    font-family: 'Ubuntu', sans-serif;
 }
 
 main {
-    height: 85vh;
+    height: 80vh;
     display: grid;
     align-items: center;
     justify-content: center;
-}
-
-a {
-    text-decoration: none;
 }
 
 /* ************************* NAVIGATION ************************* */
@@ -27,10 +23,11 @@ a {
     background-color: none;
     color: antiquewhite;
     font-weight: 700;
-    margin: 10px 15px;
+    margin: 10px 7.5px;
     border: 2px solid rgba(255, 255, 255, 0.5);
     position: fixed;
     top: 0;
+    z-index: 999;
 }
 
 .navbar {
@@ -66,7 +63,6 @@ a {
 }
 
 .linkMenuItem {
-    /* background: url("https://images.unsplash.com/photo-1618123069754-cd64c230a169?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"); */
     border-top: 2px solid rgba(255, 255, 255, 0.5);
     border-bottom: 2px solid rgba(255, 255, 255, 0.5);
     border-radius: 10%;
@@ -108,12 +104,9 @@ a {
 .caroImage {
     display: block;
     margin: auto;
-    max-width: 100%;
+    max-width: 87.5%;
     height: auto;
-}
-
-.carousel-inner {
-    border-top: 3px solid rgba(255, 255, 255, 0.25);
+    border: 3px solid rgba(255, 255, 255, 0.25);
     border-bottom: 3px solid rgba(255, 255, 255, 0.25);
 }
 
@@ -124,32 +117,38 @@ a {
     align-items: center;
     justify-content: center;
     padding: 0 15px;
-    margin: 0 auto 2.5rem auto;
+    margin: 1.75rem auto;
+}
+
+a {
+    text-decoration: none;
 }
 
 h1 {
     color: rgb(0, 0, 0);
-    text-shadow: 0px 0px 4px rgb(255, 81, 0), 0 0 3px rgba(255, 255, 255, 0.5);
+    text-shadow: 0px 0px 4px rgb(255, 120, 57), 0 0 3px rgba(255, 255, 255, 0.5);
     font-weight: 700;
     border-bottom: 2px solid rgba(48, 48, 48, 0.5);
     border-radius: 10px;
 }
 
 p {
-    font-size: 1.25rem;
+    font-size: 1.325rem;
     font-weight: 700;
 }
 
-.par1 {
-    color: rgb(19, 19, 19);
-    text-shadow: 0px 0px 4px rgb(255, 101, 30), 0 0 3px rgba(105, 105, 105, 0.75);
+.par1,
+.par2 {
+    color: rgb(0, 0, 0);
+    -webkit-text-fill-color: white;
+    -webkit-text-stroke: 1px;
     padding: 0 35px;
+    backdrop-filter: blur(2px);
 }
 
-.par2 {
-    color: rgb(209, 209, 209);
-    text-shadow: 0px 0px 4px rgb(48, 48, 48), 0 0 3px rgba(255, 17, 0, 0.75);
-    padding: 0 35px;
+.heading {
+    padding-top: 0.75rem;
+    border: none;
 }
 
 #costumes {
@@ -158,6 +157,7 @@ p {
 }
 
 .footer {
-    color: rgb(219, 219, 219);
-    text-shadow: 0px 0px 4px rgb(255, 101, 30), 0 0 3px rgba(105, 105, 105, 0.75);
+    color: rgb(240, 240, 240);
+    text-shadow: 0px 0px 4px rgb(112, 38, 3), 0 0 3px rgrgba(207, 207, 207, 0.75);
+    margin-bottom: 1.5rem;
 }
