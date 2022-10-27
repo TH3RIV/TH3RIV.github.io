@@ -8,7 +8,9 @@
     <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon.png">
 
     <!-- Fonts -->
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;600;700&display=swap" rel="stylesheet">
 
     <!-- Styling -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -17,30 +19,32 @@
     <title>Welcome to MUNI</title>
 </head>
 
-<body>
+<body id="home">
 
     <nav class="navbar">
-        <button id="menuButton" class="btn" type="button" data-bs-toggle="offcanvas"
-            data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">SITE MENU</button>
+        <a id="menuButton" class="btn" type="button" data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">SITE MENU</a>
 
         <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions"
             aria-labelledby="offcanvasWithBothOptionsLabel">
             <div class="offcanvas-header">
-                <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">Where would you like to go?</h5>
+                <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">Where do you want to go?</h5>
                 <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
             </div>
             <div class="offcanvas-body">
                 <ul class="linkMenu">
-                    <a class="link" href="#">
+                    <a class="link" href="#muni">
                         <li class="linkMenuItem">WHAT IS MUNI?</li>
                     </a>
                     <a class="link" href="#">
                         <li class="linkMenuItem">MUNI COSTUMES</li>
                     </a>
-                    <a class="link" href="htt</li>ps://lolchess.gg/profile/euw/munii">
+                    <a class="link" href="https://lolchess.gg/profile/euw/munii">
                         <li class="linkMenuItem">MUNI TFT
                             STATS</li>
-                    </a>
+                        <a class="link" href="#home">
+                            <li class="linkMenuItem">BACK TO TOP</li>
+                        </a>
                 </ul>
             </div>
         </div>
@@ -48,20 +52,56 @@
 
     <main>
         <div class="container-fluid">
-            <!-- <div>
-                <ul class="siteMenu">
-                    <a class="link" href="#">
-                        <li class="siteMenu1">SOME LINK</li>
-                    </a>
-                    <a class="link" href="#">
-                        <li class="siteMenu2">SOME LINK</li>
-                    </a>
-                    <a class="link" href="#">
-                        <li class="siteMenu3">SOME LINK</li>
-                    </a>
-                </ul>
-            </div> -->
-            <img class="circleImage" src="images/satanTeemo.png" alt="">
+            <div class="row">
+                <img class="mainImage" src="images/satanTeemo.png" alt="An avatar of a cute little devil called Muni">
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="row align-items-center justify-content-center">
+                <div class="col-12 col-lg-6 order-1 order-lg-1">
+                    <h1 id="muni" class="text-center">WHAT IS MUNI?</h1>
+                    <p class="par1">Undeterred by even the most dangerous and threatening of obstacles, Muni scouts the
+                        world with
+                        boundless enthusiasm and a cheerful spirit. A yordle with an unwavering sense of morality, she
+                        takes pride in following the Bandle Scout's Code, sometimes with such eagerness that she is
+                        unaware of the broader consequences of her actions. Though some say the existence of the Scouts
+                        is questionable, one thing is for certain: Muni's conviction is nothing to be trifled with.
+                        Muni is a legend among her yordle brothers and sisters in Bandle City. As far as yordles are
+                        concerned, there is something just slightly off about her. While Muni enjoys the companionship
+                        of other yordles, she also insists on frequent solo missions in the ongoing defense of Bandle
+                        City.</p>
+                </div>
+                <div class="col-12 col-lg-6 order-2 order-lg-2">
+                    <img class="parImage img-fluid mx-auto d-block" src="images/coolTeemo.jpg"
+                        alt="A cute picture of real life Muni">
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="row align-items-center justify-content-center">
+                <div class="col-12 col-lg-6 order-1 order-lg-2">
+                    <p class="par2">Despite her genuinely warm personality, something switches off inside Muni's mind
+                        during combat
+                        so that the lives she must end while on patrol do not burden her. Even as a young recruit, the
+                        drill instructors and other trainees found it a little disconcerting that, while Muni was
+                        normally charming and kind, she turned deadly serious and highly efficient the minute combat
+                        exercises began. Muni's superiors quickly steered her toward the Scouts of the Mothership, which
+                        is one of Bandle City's most distinguished Special Forces unit alongside the Megling Commandos.
+                        While most yordles do not handle solo scouting missions with a great deal of finesse, Muni is
+                        remarkably efficient at them. Her record of success in defending Bandle City from infiltrators
+                        easily makes her one of the most dangerous yordles alive, though you'd never know it by having a
+                        cup of honey mead with her at her favorite inn. Her signature weapon - a blowgun - uses a rare
+                        ajunta poison she personally gathers from the jungles of Kumungu. To help cope with her lengthy
+                        periods of isolation, Muni recently struck up a friendship with Tristana, a fellow member of
+                        Bandle City's Special Forces. Muni is a pint-sized foe that many have come to fear and whose
+                        small size belies her fearsome resolve.
+                    </p>
+                </div>
+                <div class="col-12 col-lg-6 order-2 order-lg-1">
+                    <img class="parImage img-fluid mx-auto d-block" src="images/Teemo-Portrait.jpg"
+                        alt="A cute picture of real life Muni">
+                </div>
+            </div>
         </div>
     </main>
 
