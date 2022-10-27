@@ -29,11 +29,11 @@ a {
     font-weight: 700;
     margin: 25px;
     border: 2px solid rgba(255, 255, 255, 0.5);
+    position: fixed;
+    top: 0;
 }
 
 .navbar {
-    position: fixed;
-    top: 0;
     margin: 0;
     padding: 0;
 }
