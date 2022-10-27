@@ -21,7 +21,7 @@ a {
     text-decoration: none;
 }
 
-/* ************************* NAVBAR ************************* */
+/* ************************* NAVIGATION ************************* */
 
 #menuButton {
     background-color: none;
@@ -32,7 +32,7 @@ a {
 }
 
 .navbar {
-    position: sticky;
+    position: fixed;
     top: 0;
     margin: 0;
     padding: 0;
@@ -40,6 +40,7 @@ a {
 
 .offcanvas {
     background-color: rgba(245, 56, 56, 0.1);
+    backdrop-filter: blur(5px);
     display: flex;
     justify-content: center;
 }
@@ -84,8 +85,8 @@ a {
 
 .link:hover,
 .linkMenuItem:hover {
-    text-shadow: 0px 0px 5px rgb(255, 81, 0), 0 0 3px rgba(255, 255, 255, 0.5);
-    color: rgb(219, 219, 219);
+    text-shadow: 0px 0px 4px rgb(255, 81, 0), 0 0 2px rgba(255, 255, 255, 0.5);
+    color: rgb(235, 235, 235);
     transform: translateX(10%);
     transition: 0.2s ease-in-out;
 }
@@ -95,13 +96,13 @@ a {
     max-width: 600px;
     width: 90vw;
     height: 95%;
-    margin: 0;
+    margin: 5rem 0 0 0;
     padding: 0 0 1rem 0;
 }
 
 .parImage {
-    border: 3px solid rgba(255, 255, 255, 0.5);
-    border-radius: 10%;
+    border: 3px solid rgba(255, 255, 255, 0.25);
+    border-radius: 5%;
 }
 
 /* ************************* CONTENT ************************* */
@@ -129,10 +130,12 @@ p {
 
 .par1 {
     color: rgb(19, 19, 19);
-    text-shadow: 0px 0px 4px rgb(255, 81, 0), 0 0 3px rgba(105, 105, 105, 0.75);
+    text-shadow: 0px 0px 4px rgb(255, 101, 30), 0 0 3px rgba(105, 105, 105, 0.75);
+    padding: 0 35px;
 }
 
 .par2 {
-    color: rgb(190, 190, 190);
-    text-shadow: 0px 0px 4px rgb(0, 0, 0), 0 0 3px rgba(107, 7, 0, 0.75);
+    color: rgb(209, 209, 209);
+    text-shadow: 0px 0px 4px rgb(48, 48, 48), 0 0 3px rgba(255, 17, 0, 0.75);
+    padding: 0 35px;
 }
