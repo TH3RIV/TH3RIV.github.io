@@ -71,8 +71,8 @@ li {
 }
 
 .icon {
-    height: 20%;
-    width: 20%;
+    height: 17.5%;
+    width: 17.5%;
 }
 
 .pricing {
@@ -86,8 +86,10 @@ li {
 }
 
 .plan {
-    padding-left: 0;
-    margin-left: 0;
+    display: block;
+    justify-content: flex-start;
+    margin-right: 15%;
+    margin-left: 2.5%;
 }
 
 .bold {
@@ -125,11 +127,12 @@ li {
     border: none;
     border-radius: 10px;
     font-weight: 700;
-    padding: 4.5% 0;
+    padding: 4% 0;
 }
 
 .backgroundButton:hover {
     background-color: hsl(245, 100%, 72%);
+    color: white;
 }
 
 .noBackgroundButton {
@@ -138,7 +141,7 @@ li {
     border: none;
     border-radius: 10px;
     font-weight: 700;
-    padding: 4.5% 0;
+    padding: 4% 0;
 }
 
 .noBackgroundButton:hover {
@@ -162,5 +165,10 @@ li {
     .container-fluid {
         width: 100%;
         max-width: 400px;
+    }
+
+    .plan {
+        margin-left: 0;
+        padding-left: 0;
     }
 }
