@@ -3,6 +3,15 @@
     margin: 0;
 }
 
+html {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+html::-webkit-scrollbar {
+    display: none;
+}
+
 body {
     background: url("images/background.jpg");
     object-fit: cover;
