@@ -1,0 +1,166 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 16px;
+    background: hsl(225, 100%, 94%);
+}
+
+body {
+    font-size: 0.95rem;
+    background: url(images/pattern-background-mobile.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+main {
+    height: 95vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+img {
+    width: 100%;
+    margin: 0;
+}
+
+h1 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    padding: 5%;
+}
+
+p {
+    font-weight: 500;
+    margin-bottom: 0;
+    padding-bottom: 5%;
+}
+
+ul,
+li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.regular {
+    color: hsl(224, 23%, 55%);
+}
+
+.container-fluid {
+    background-color: white;
+    width: 100%;
+    max-width: 335px;
+    margin: 0 auto;
+    padding: 0;
+    border-radius: 20px;
+}
+
+.img-fluid {
+    border-radius: 20px 20px 0 0;
+}
+
+.headingText {
+    margin: 0 7.5%;
+    padding: 5%;
+}
+
+.icon {
+    height: 20%;
+    width: 20%;
+}
+
+.pricing {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: hsl(225, 100%, 98%);
+    margin: 0 7.5% 5% 7.5%;
+    padding: 5%;
+    border-radius: 10px;
+}
+
+.plan {
+    padding-left: 0;
+    margin-left: 0;
+}
+
+.bold {
+    font-weight: 700;
+}
+
+.smol {
+    font-weight: 500;
+}
+
+.change {
+    color: hsl(245, 75%, 52%);
+    font-weight: 700;
+}
+
+.change:hover {
+    text-decoration: none;
+    color: hsl(245, 100%, 72%);
+}
+
+.buttons {
+    display: block;
+    margin: 7.5%;
+}
+
+.buttonLinks {
+    display: block;
+    text-decoration: none;
+}
+
+.backgroundButton {
+    width: 100%;
+    background-color: hsl(245, 75%, 52%);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-weight: 700;
+    padding: 4.5% 0;
+}
+
+.backgroundButton:hover {
+    background-color: hsl(245, 100%, 72%);
+}
+
+.noBackgroundButton {
+    width: 100%;
+    background: none;
+    border: none;
+    border-radius: 10px;
+    font-weight: 700;
+    padding: 4.5% 0;
+}
+
+.noBackgroundButton:hover {
+    color: hsl(223, 47%, 23%);
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+@media screen and (min-width: 600px) {
+    body {
+        background-image: url(images/pattern-background-desktop.svg);
+    }
+
+    .container-fluid {
+        width: 100%;
+        max-width: 400px;
+    }
+}
