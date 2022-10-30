@@ -60,13 +60,14 @@ main {
 }
 
 .offcanvas-header {
-    background-color: rgba(49, 6, 0, 0.9);
+    background-color: rgba(70, 0, 0, 0.9);
     color: rgb(211, 211, 211);
     text-shadow: 0 0 3px antiquewhite;
     text-transform: uppercase;
     cursor: default;
     padding: 25px;
     font-weight: 700;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.5);
 }
 
 .btn-close:hover {
@@ -187,7 +188,7 @@ p {
 
 .footer {
     color: rgb(240, 240, 240);
-    text-shadow: 0px 0px 4px rgb(112, 38, 3), 0 0 3px rgrgba(207, 207, 207, 0.75);
+    text-shadow: 0px 0px 4px rgb(112, 38, 3), 0 0 3px rgba(207, 207, 207, 0.75);
     margin-bottom: 1rem;
 }
 
