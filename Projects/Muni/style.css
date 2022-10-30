@@ -13,7 +13,7 @@ html::-webkit-scrollbar {
 }
 
 body {
-    background: url("/images/background.jpg");
+    background: url("./images/background.jpg");
     object-fit: cover;
     background-attachment: fixed;
     font-family: 'Ubuntu', sans-serif;
