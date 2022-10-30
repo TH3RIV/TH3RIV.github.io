@@ -17,13 +17,14 @@ body {
     object-fit: cover;
     background-attachment: fixed;
     font-family: 'Ubuntu', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 main {
     height: 80vh;
-    display: grid;
-    align-items: center;
-    justify-content: center;
+    max-width: 90%;
 }
 
 /* ************************* NAVIGATION ************************* */
@@ -32,11 +33,13 @@ main {
     background-color: none;
     color: antiquewhite;
     font-weight: 700;
-    margin: 10px 7.5px;
+    margin: 0.5rem 0.5rem;
     border: 2px solid rgba(255, 255, 255, 0.5);
     position: fixed;
     top: 0;
+    left: 0;
     z-index: 999;
+
 }
 
 .navbar {
@@ -101,20 +104,18 @@ main {
     max-width: 600px;
     width: 90vw;
     height: 95%;
-    margin: 5rem 0 0 0;
+    margin: 4.5rem 0 1.5rem 0;
     padding: 0 0 1rem 0;
 }
 
 .parImage {
+    height: 100%;
+    object-fit: cover;
     border: 3px solid rgba(255, 255, 255, 0.25);
-    border-radius: 2.5%;
 }
 
 .caroImage {
     display: block;
-    margin: auto;
-    max-width: 87.5%;
-    height: auto;
     border: 3px solid rgba(255, 255, 255, 0.25);
     border-bottom: 3px solid rgba(255, 255, 255, 0.25);
 }
@@ -125,8 +126,8 @@ main {
     display: grid;
     align-items: center;
     justify-content: center;
-    padding: 0 15px;
-    margin: 1.75rem auto;
+    padding: 0;
+    margin: 1.5rem auto;
 }
 
 a {
@@ -139,6 +140,7 @@ h1 {
     font-weight: 700;
     border-bottom: 2px solid rgba(48, 48, 48, 0.5);
     border-radius: 10px;
+    margin: 0 1% 1% 1%;
 }
 
 p {
@@ -148,11 +150,13 @@ p {
 
 .par1,
 .par2 {
-    color: rgb(0, 0, 0);
+
     -webkit-text-fill-color: white;
     -webkit-text-stroke: 1px;
-    padding: 0 35px;
-    backdrop-filter: blur(2px);
+    color: rgb(0, 0, 0);
+    backdrop-filter: blur(1px);
+    text-align: justify;
+    text-justify: inter-word;
 }
 
 .heading {
@@ -160,13 +164,31 @@ p {
     border: none;
 }
 
+.content {
+    width: 100%;
+    margin-top: 2rem;
+}
+
+.info {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 15px;
+}
+
+#muni,
 #costumes {
     text-align: center;
-    padding: 0;
+    padding: 0.5rem 0 0 0;
 }
 
 .footer {
     color: rgb(240, 240, 240);
     text-shadow: 0px 0px 4px rgb(112, 38, 3), 0 0 3px rgrgba(207, 207, 207, 0.75);
-    margin-bottom: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+@media (max-width: 1199px) {
+    .info {
+        padding: 0;
+    }
 }
