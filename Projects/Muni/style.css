@@ -159,7 +159,6 @@ p {
     -webkit-text-fill-color: white;
     -webkit-text-stroke: 1px;
     color: rgb(0, 0, 0);
-    backdrop-filter: blur(1px);
     text-align: justify;
     text-justify: inter-word;
 }
