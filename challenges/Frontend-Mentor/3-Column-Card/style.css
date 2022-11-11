@@ -25,13 +25,10 @@ html {
 
 body {
     background-color: var(--bg-head-butt-color);
-}
-
-main {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 11.5% 0;
+    min-height: 100vh;
+    display: grid;
+    place-content: center;
+    padding: 3rem;
 }
 
 h1 {
@@ -55,16 +52,14 @@ p {
 }
 
 .container-fluid {
-    width: 75%;
-    max-width: 60rem;
+    width: 80%;
+    max-width: 66rem;
     border-radius: 0.625rem;
     overflow: hidden;
     margin: 0 auto;
 }
 
 .section {
-    min-width: 14rem;
-    max-width: 27.5rem;
     padding: 3rem;
 }
 
@@ -101,6 +96,7 @@ p {
 .attribution {
     font-size: 11px;
     text-align: center;
+    margin: 2rem 0;
 }
 
 .attribution a {
