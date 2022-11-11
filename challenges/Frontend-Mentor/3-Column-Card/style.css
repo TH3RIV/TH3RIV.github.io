@@ -57,7 +57,7 @@ p {
 .container-fluid {
     width: 75%;
     max-width: 60rem;
-    border-radius: 1rem;
+    border-radius: 0.625rem;
     overflow: hidden;
     margin: 0 auto;
 }
