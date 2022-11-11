@@ -1,0 +1,108 @@
+:root {
+    /* TEXT COLORS */
+    --text-color: hsla(0, 0%, 100%, 0.75);
+    --bg-head-butt-color: hsl(0, 0%, 95%);
+
+    /* SECTION COLORS */
+    --section-bg-1: hsl(31, 77%, 52%);
+    --section-bg-2: hsl(184, 100%, 22%);
+    --section-bg-3: hsl(179, 100%, 13%);
+
+    /* FONTS */
+    --ff-headings: 'Big Shoulders Display', cursive;
+    --ff-text: 'Lexend Deca', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 15px;
+}
+
+body {
+    background-color: var(--bg-head-butt-color);
+}
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 11.5% 0;
+}
+
+h1 {
+    text-transform: uppercase;
+    color: var(--bg-head-butt-color);
+    font-family: var(--ff-headings);
+    font-weight: 700;
+    font-size: 2.6rem;
+    margin: 2rem 0;
+}
+
+p,
+a {
+    color: var(--text-color);
+    font-family: var(--ff-text);
+    font-weight: 400;
+}
+
+p {
+    margin-bottom: 6rem;
+}
+
+.container-fluid {
+    width: 75%;
+    max-width: 60rem;
+    border-radius: 1rem;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.section {
+    min-width: 14rem;
+    max-width: 27.5rem;
+    padding: 3rem;
+}
+
+.orange {
+    color: var(--section-bg-1);
+    background-color: var(--section-bg-1);
+}
+
+.cyan {
+    color: var(--section-bg-2);
+    background-color: var(--section-bg-2);
+}
+
+.darkCyan {
+    color: var(--section-bg-3);
+    background-color: var(--section-bg-3);
+}
+
+.buttons {
+    text-decoration: none;
+    color: inherit;
+    background-color: var(--bg-head-butt-color);
+    border: 2px solid var(--bg-head-butt-color);
+    border-radius: 25px;
+    padding: 0.75rem 12.5%;
+}
+
+.buttons:hover {
+    color: var(--bg-head-butt-color);
+    background: none;
+    transition: 0.15s ease-in-out;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
