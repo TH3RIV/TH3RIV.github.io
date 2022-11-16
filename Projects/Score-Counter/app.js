@@ -20,11 +20,23 @@ const rr = document.querySelector('#rr');
 p1.addEventListener('click', function () {
     scoreOne = scoreOne + 1;
     h1.innerText = `${scoreOne} - ${scoreTwo}`;
+    if (scoreOne == inputVal && scoreOne > scoreTwo) {
+        h2.innerText = "Player One WINS!";
+        h2.style.color = 'rgb(0, 65, 206)';
+        p1.disabled = true;
+        p2.disabled = true;
+    }
 });
 
 p2.addEventListener('click', function () {
     scoreTwo = scoreTwo + 1;
     h1.innerText = `${scoreOne} - ${scoreTwo}`;
+    if (scoreTwo == inputVal && scoreTwo > scoreOne) {
+        h2.innerText = "Player Two WINS!";
+        h2.style.color = 'rgb(129, 0, 0)';
+        p1.disabled = true;
+        p2.disabled = true;
+    }
 });
 
 rr.addEventListener('click', function () {
@@ -32,20 +44,17 @@ rr.addEventListener('click', function () {
     scoreTwo = 0;
     h1.innerText = `${scoreOne} - ${scoreTwo}`;
     h2.innerText = "Add points using the buttons";
+    h2.style.color = 'rgb(0, 0, 0)';
+    p1.disabled = false;
+    p2.disabled = false;
 });
 
-// CONNECT THE THE SET NUMBER OF POINTS
+// CONNECT SET NUMBER OF POINTS
 
 let input = document.querySelector('select');
+let inputVal = input.value;
 
-input.addEventListener('select', function () {
-    if (scoreOne === input.value && scoreOne > 0) {
-        h2.innerText = "Player One WINS";
-    }
-    else if (scoreTwo === input.value && scoreTwo > 0) {
-        h2.innerText = "Player Two WINS";
-    }
-    else {
-        h2.innerText = "Add points using the buttons";
-    }
+input.addEventListener('input', function () {
+    inputVal = input.value;
+    console.log(inputVal);
 });
