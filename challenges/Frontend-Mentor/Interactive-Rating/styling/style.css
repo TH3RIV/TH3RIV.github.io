@@ -1,0 +1,171 @@
+/* CUSTOM PROPERTIES */
+
+:root {
+
+    /* COLORS */
+    --clr-primary-orange: hsl(25, 97%, 53%);
+    --clr-neutral-white: hsl(0, 0%, 100%);
+    --clr-neutral-grey-light: hsl(217, 12%, 63%);
+    --clr-neutral-grey-dark: hsl(216, 12%, 54%);
+    --clr-neutral-blue-light: hsl(213, 19%, 23%);
+    --clr-neutral-blue: hsl(213, 19%, 18%);
+    --clr-neutral-blue-dark: hsl(216, 12%, 8%);
+
+    /* FONT */
+    --ff-overpass: 'Overpass', sans-serif;
+    --fw-regular: 400;
+    --fw-bold: 700;
+}
+
+/* RESET */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* BODY PROPERTIES */
+
+body {
+    min-height: 100vh;
+    display: grid;
+    place-content: center;
+    background-color: var(--clr-neutral-blue-dark);
+    font-family: var(--ff-overpass);
+    font-size: 15px;
+    padding: 1rem;
+}
+
+/* GENERAL CARD STYLING */
+
+.container {
+    display: grid;
+    place-content: center;
+    gap: 1.5rem;
+    background-color: var(--clr-neutral-blue);
+    max-width: 345px;
+    padding: 1.75rem;
+    border-radius: 1rem;
+}
+
+.text {
+    display: grid;
+    place-content: center;
+    gap: 1rem;
+}
+
+.title {
+    color: var(--clr-neutral-white);
+    font-size: 1.5rem;
+    font-weight: var(--fw-bold);
+}
+
+.descr {
+    color: var(--clr-neutral-grey-light);
+    font-size: 0.9rem;
+    line-height: 1.375rem;
+    font-weight: var(--fw-regular);
+}
+
+/* CARD STYLING: BEFORE SUBMIT */
+
+.rating {
+    display: grid;
+    gap: 1.5rem;
+    width: 100%;
+}
+
+.star {
+    background-color: var(--clr-neutral-blue-light);
+    border-radius: 50%;
+    padding: 0.75rem;
+    margin: 0.25rem 0;
+}
+
+.form {
+    display: grid;
+    gap: 1.5rem;
+}
+
+.options {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.options label {
+    padding: 0.85rem 1.25rem;
+    border-radius: 50%;
+    color: var(--clr-neutral-grey-light);
+    background-color: var(--clr-neutral-blue-light);
+}
+
+.options label:hover {
+    cursor: pointer;
+    color: var(--clr-neutral-white);
+    background-color: var(--clr-primary-orange);
+}
+
+.options input[type="radio"] {
+    display: none;
+}
+
+.options input[type="radio"]:checked+label {
+    color: var(--clr-neutral-white);
+    background-color: var(--clr-neutral-grey-light);
+}
+
+.submit {
+    display: grid;
+}
+
+.submit_button {
+    background-color: var(--clr-primary-orange);
+    color: var(--clr-neutral-white);
+    border: none;
+    border-radius: 2rem;
+    padding: 0.75rem 1.25rem;
+    font-weight: var(--fw-bold);
+    letter-spacing: 0.25rem;
+}
+
+.submit_button:hover {
+    cursor: pointer;
+    color: var(--clr-primary-orange);
+    background-color: var(--clr-neutral-white);
+}
+
+/* CARD STYLING: AFTER SUBMIT */
+
+.thanks {
+    width: 100%;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    gap: 1.5rem;
+}
+
+.selection {
+    color: var(--clr-primary-orange);
+    background-color: var(--clr-neutral-blue-light);
+    width: 60%;
+    padding: 0.5rem;
+    border-radius: 1rem;
+}
+
+/* FOOTER */
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    margin-top: 2rem;
+    color: var(--clr-neutral-grey-light);
+}
+
+.attribution a {
+    color: var(--clr-primary-orange);
+    text-decoration: none;
+}
