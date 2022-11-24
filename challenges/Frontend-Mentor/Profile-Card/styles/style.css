@@ -1,0 +1,156 @@
+/* CUSTOM PROPERTIES */
+
+:root {
+    /* COLORS */
+    --clr-primary-cyan: hsl(185, 75%, 39%);
+    --clr-primary-desat-blue: hsl(229, 23%, 23%);
+    --clr-primary-blue: hsl(227, 10%, 46%);
+    --clr-neutral-gray: hsl(0, 0%, 59%);
+    --clr-neutral-gray-light: hsl(0, 0%, 90%);
+    --clr-neutral-white: hsl(0, 0%, 100%);
+
+    /* FONTS */
+    --ff-main: 'Kumbh Sans', sans-serif;
+    --fw-regular: 400;
+    --fw-bold: 700;
+    --fs-name-stats: 18px;
+}
+
+/* RESET */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* GENERAL STYLING */
+
+body {
+    min-height: 100vh;
+    display: grid;
+    place-content: center;
+    background-image:
+        url(/images/bg-pattern-top.svg),
+        url(/images/bg-pattern-bottom.svg);
+    background-position:
+        right 55vw bottom 55vh,
+        left 50vw top 50vh;
+    background-repeat: no-repeat, no-repeat;
+    background-size: 150%, 150%;
+    background-color: var(--clr-primary-cyan);
+    font-family: var(--ff-main);
+    font-size: var(--fs-name-stats);
+}
+
+.text-dark {
+    color: var(--clr-primary-desat-blue);
+    font-weight: var(--fw-bold);
+}
+
+.text-light {
+    color: var(--clr-neutral-gray);
+}
+
+.city {
+    font-size: 0.925rem;
+}
+
+.small {
+    font-size: 0.75rem;
+}
+
+/* CARD STYLING */
+
+.card {
+    background-color: var(--clr-neutral-white);
+    display: grid;
+    place-content: center;
+    text-align: center;
+    gap: 1rem;
+    max-width: 325px;
+    border-radius: 1rem;
+    overflow: hidden;
+}
+
+
+.profile-pic {
+    display: inline-block;
+    border-radius: 50%;
+    border: 0.375rem solid var(--clr-neutral-white);
+    transform: translateY(-70%);
+}
+
+.info {
+    display: grid;
+    place-content: center;
+    gap: 0.25rem;
+    margin: -30% 0 0 0;
+    border-bottom: 1px solid var(--clr-neutral-gray-light);
+}
+
+.name-age {
+    display: inline-flex;
+    gap: 0.5rem;
+    position: relative;
+}
+
+.stats {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+    padding-bottom: 1.5rem;
+}
+
+/* FOOTER */
+
+footer {
+    margin-top: 1rem;
+}
+
+.attribution {
+    text-align: center;
+    color: var(--clr-primary-desat-blue);
+    font-size: 0.75rem;
+
+}
+
+.attribution a,
+.attribution a:visited {
+    color: var(--clr-neutral-gray-light);
+    text-decoration: none;
+}
+
+.attribution a:hover {
+    color: var(--clr-primary-blue);
+}
+
+@media (min-width: 768px) {
+    .card {
+        max-width: 375px;
+    }
+
+    .text-dark,
+    #age {
+        font-size: 1.25rem;
+    }
+
+    .city {
+        font-size: 1.05rem;
+    }
+
+    .small {
+        font-size: 0.85rem;
+    }
+}
+
+@media (min-width: 1440px) {
+    body {
+        background-size: 50%;
+
+        background-position:
+            right 52.5vw bottom 40vh,
+            left 50vw top 48vh;
+    }
+}
