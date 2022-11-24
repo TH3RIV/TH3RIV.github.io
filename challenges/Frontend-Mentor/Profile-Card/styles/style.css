@@ -30,7 +30,9 @@ body {
     min-height: 100vh;
     display: grid;
     place-content: center;
-    background-image: url(images/bg-pattern-top.svg), url(images/bg-pattern-bottom.svg);
+    background-image: 
+	url(images/bg-pattern-top.svg), 
+	url(images/bg-pattern-bottom.svg);
     background-position:
         right 55vw bottom 55vh,
         left 50vw top 50vh;
