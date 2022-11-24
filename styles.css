@@ -43,14 +43,16 @@ li {
 /* ********* NAVBAR ********* */
 
 .navbar-brand {
-    color: antiquewhite;
+    color: hsla(34, 78%, 91%, 0.85);
     margin: 0 1%;
     font-size: 1.5em;
     text-align: left;
     text-transform: uppercase;
+    transition: 1.25s ease-in-out;
 }
 
 .navbar-brand:hover {
+    color: hsl(46, 100%, 50%);
     text-shadow: 0 0 5px hsla(46, 100%, 50%, 0.75);
 }
 
