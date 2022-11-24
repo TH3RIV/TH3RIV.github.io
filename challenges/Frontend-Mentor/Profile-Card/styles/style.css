@@ -37,7 +37,7 @@ body {
         right 55vw bottom 55vh,
         left 50vw top 50vh;
     background-repeat: no-repeat, no-repeat;
-    background-size: 150%, 150%;
+    background-size: 150%;
     background-color: var(--clr-primary-cyan);
     font-family: var(--ff-main);
     font-size: var(--fs-name-stats);
