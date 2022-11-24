@@ -7,7 +7,7 @@ const photo = document.querySelector('#photos');
 function randomizer() {
     let cities = ["London, GB", "Paris, FR", "Berlin, DE", "Milan, IT", "Tokyo, JP", "Vilnius, LT",
         "Madrid, ES", "Belgrad, SR", "Kyiv, UA", "Bangkok, TH", "Rio De Janeiro, BR",
-        "Doha, QA", "Dubay, AE", "Riga, LV", "Vienna, AT", "Beijing, CN", "Oslo, NO"];
+        "Doha, QA", "Dubai, AE", "Riga, LV", "Vienna, AT", "Beijing, CN", "Oslo, NO"];
     let randCity = cities[Math.floor(Math.random() * cities.length)];
     let randAge = Math.floor(Math.random() * 20) + 20;
     let randNumber = Math.floor(Math.random() * 1000);
