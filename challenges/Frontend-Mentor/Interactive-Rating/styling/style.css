@@ -57,7 +57,7 @@ body {
 
 .title {
     color: var(--clr-neutral-white);
-    font-size: 1.5rem;
+    font-size: 1rem;
     font-weight: var(--fw-bold);
 }
 
