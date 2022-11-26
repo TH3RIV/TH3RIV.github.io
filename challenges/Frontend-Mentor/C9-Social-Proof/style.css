@@ -160,7 +160,7 @@ body {
 
     .grid,
     .flex {
-        gap: 2rem;
+        gap: 1rem;
     }
 
     /* CONTENT SPECIFIC STYLING */
