@@ -30,9 +30,13 @@ body {
     min-height: 100vh;
     display: grid;
     place-content: center;
-    background-image: url(images/bg-pattern-top.svg), url(images/bg-pattern-bottom.svg);
-    background-position: right 47vw bottom 35vh, left 42vw top 47vh;
-    background-repeat: no-repeat, no-repeat;
+    background-image: 
+        url(images/bg-pattern-top.svg), 
+        url(images/bg-pattern-bottom.svg);
+    background-position: 
+        right 47vw bottom 35vh, 
+        left 42vw top 47vh;
+    background-repeat: no-repeat;
     background-size: cover;
     background-color: var(--clr-primary-cyan);
     font-family: var(--ff-main);
