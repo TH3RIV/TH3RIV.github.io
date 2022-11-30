@@ -1,0 +1,237 @@
+/* RESET */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* CUSTOM PROPERTIES */
+
+:root {
+
+    /* COLORS */
+
+    --clr-prim-very-dark-blue-mb: hsl(233, 47%, 7%);
+    /* ^ main  background ^ */
+
+    --clr-prim-dark-desat-blue-cb: hsl(244, 38%, 16%);
+    /* ^ card  background ^ */
+
+    --clr-prim-soft-violet-acc: hsl(277, 64%, 61%);
+    /* ^ accents ^ */
+
+    --clr-neut-white-mhs: hsl(0, 0%, 100%);
+    /* ^ main heading, stats ^ */
+
+    --clr-neut-trans-white-mp: hsla(0, 0%, 100%, 0.75);
+    /* ^ main paragraphs ^ */
+
+    --clr-neut-trans-white-sh: hsla(0, 0%, 100%, 0.6);
+    /* ^ stat headings ^ */
+
+    /* FONT */
+    --ff-bold: 'Inter', sans-serif;
+    --ff-skinny: 'Lexend Deca', sans-serif;
+    --fw-bold-700: 700;
+    --fw-reg-400: 400
+}
+
+/* GENERAL STYLING */
+
+body {
+    min-height: 100vh;
+    display: grid;
+    place-content: center;
+    gap: 2rem;
+    background-color: var(--clr-prim-very-dark-blue-mb);
+    font-size: 15px;
+    padding: 2rem;
+}
+
+img {
+    width: 100%;
+}
+
+/* CONTENT SPECIFIC STYLING */
+
+/* MAIN CONTENT */
+.card,
+.card__information,
+.card__text,
+.card__stats,
+.card__stats-text {
+    flex-direction: column;
+}
+
+.card,
+.card__information,
+.card__text,
+.card__stats {
+    gap: 2rem;
+}
+
+.card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 325px;
+    text-align: center;
+    background-color: var(--clr-prim-dark-desat-blue-cb);
+    border-radius: 0.5rem;
+    overflow: hidden;
+}
+
+.card__image {
+    position: relative;
+    background-size: contain;
+}
+
+.card__image--overlay {
+    background-color: var(--clr-prim-soft-violet-acc);
+    mix-blend-mode: multiply;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.card__information {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1.75rem;
+}
+
+.card__text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card__heading,
+.card__stats-text--number {
+    color: var(--clr-neut-white-mhs);
+    font-family: var(--ff-bold);
+    font-weight: var(--fw-bold-700);
+}
+
+.card__description,
+.card__stats-text--descr {
+    font-family: var(--ff-skinny);
+    font-weight: var(--fw-reg-400);
+}
+
+.card__heading {
+    font-size: 1.75rem;
+}
+
+.card__heading span {
+    color: var(--clr-prim-soft-violet-acc);
+}
+
+.card__description {
+    color: var(--clr-neut-trans-white-mp);
+    font-size: 0.9rem;
+    line-height: 1.75;
+}
+
+.card__stats {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card__stats-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.card__stats-text--number {
+    font-size: 1.4rem;
+}
+
+.card__stats-text--descr {
+    color: var(--clr-neut-trans-white-sh);
+    text-transform: uppercase;
+    font-size: 0.7rem;
+    letter-spacing: 0.125rem;
+}
+
+/* FOOTER */
+.attribution {
+    font-size: 0.7rem;
+    text-align: center;
+    color: var(--clr-neut-white-mhs);
+}
+
+.attribution a,
+.attribution a:visited {
+    color: var(--clr-neut-trans-white-sh);
+    text-decoration: none;
+}
+
+.attribution a:hover,
+.attribution a:focus {
+    color: var(--clr-prim-soft-violet-acc);
+}
+
+
+@media (min-width: 768px) {
+
+    .card {
+        max-width: 475px;
+    }
+
+    .card__stats {
+        flex-direction: row;
+        justify-content: space-evenly;
+        width: 100%;
+    }
+}
+
+@media (min-width: 1060px) {
+
+    .card {
+        max-width: 1024px;
+        flex-direction: row;
+        gap: 2rem;
+        text-align: left;
+    }
+
+    .card__image {
+        order: 2;
+        width: 100%;
+    }
+
+    .card__information {
+        text-align: left;
+        justify-content: flex-start;
+        padding: 2rem 4rem;
+        width: 100%;
+        gap: 4rem;
+        order: 1;
+    }
+
+    .card__heading {
+        font-size: 2.25rem;
+    }
+
+    .card__description {
+        font-size: 0.95rem;
+    }
+
+    .card__stats {
+        flex-direction: row;
+        justify-content: flex-start;
+        width: 100%;
+    }
+
+    .card__stats-text--number,
+    .card__stats-text--descr {
+        width: 100%;
+    }
+}
