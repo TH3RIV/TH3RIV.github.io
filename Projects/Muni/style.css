@@ -60,6 +60,8 @@ main {
     justify-content: center;
 }
 
+
+
 .offcanvas-header {
     background-color: rgba(70, 0, 0, 0.9);
     color: rgb(211, 211, 211);
@@ -71,6 +73,10 @@ main {
     border-bottom: 2px solid rgba(255, 255, 255, 0.5);
 }
 
+.offcanvas-title {
+    font-size: 1rem;
+}
+
 .btn-close:hover {
     background-color: rgba(255, 255, 255, 0.5);
     transition: 0.2s ease-in-out;
@@ -78,7 +84,7 @@ main {
 
 .linkMenu {
     list-style: none;
-    padding-right: 15px;
+    padding-right: 1rem;
 }
 
 .linkMenuItem {
@@ -86,8 +92,8 @@ main {
     border-bottom: 2px solid rgba(255, 255, 255, 0.5);
     border-radius: 10%;
     text-align: center;
-    margin: 30px 25px 50px 0;
-    padding: 45px 0;
+    margin: 2rem 1.5rem 3.5rem 0;
+    padding: 3rem 0;
 }
 
 .link {
@@ -140,7 +146,7 @@ a {
     text-decoration: none;
 }
 
-h1 {
+h2 {
     color: rgb(0, 0, 0);
     text-shadow: 0px 0px 4px rgb(255, 120, 57), 0 0 3px rgba(255, 255, 255, 0.5);
     font-weight: 700;
@@ -194,22 +200,47 @@ p {
 /* ************************* MEDIA QUERIES ************************* */
 
 @media (min-width: 768px) {
-    h1 {
+    h2 {
         font-size: 2rem;
     }
 
     p {
         font-size: 1.325rem;
     }
+
+    .offcanvas-title {
+        font-size: 1.25rem;
+    }
 }
 
 @media (min-width: 1921px) {
-    h1 {
+    h2 {
         font-size: 3rem;
     }
 
     p {
         font-size: 2rem;
+    }
+
+    .btn {
+        font-size: 2rem;
+    }
+
+    .offcanvas {
+        min-width: 40rem;
+    }
+
+    .offcanvas-title {
+        font-size: 2rem;
+        padding: 0 3rem;
+    }
+
+    .link {
+        font-size: 2rem;
+    }
+
+    .linkMenu {
+        padding: 0 4rem;
     }
 
     .caroImage {
