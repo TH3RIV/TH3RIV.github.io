@@ -14,16 +14,17 @@ html::-webkit-scrollbar {
 
 body {
     background: url("https://www.linkpicture.com/q/background_11.jpg");
-    object-fit: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
     background-attachment: fixed;
     font-family: 'Ubuntu', sans-serif;
     display: flex;
     align-items: center;
     justify-content: center;
+    min-height: 100vh;
 }
 
 main {
-    height: 80vh;
     max-width: 90%;
 }
 
@@ -44,7 +45,7 @@ main {
 
 #menuButton:hover {
     text-shadow: 0px 0px 4px rgba(253, 118, 56, 0.75), 0 0 2px rgba(255, 255, 255, 0.5);
-    transition: 0.15s ease-in-out;
+    transition: 0.2s ease-in-out;
 }
 
 .navbar {
@@ -65,7 +66,7 @@ main {
     text-shadow: 0 0 3px antiquewhite;
     text-transform: uppercase;
     cursor: default;
-    padding: 25px;
+    padding: 1rem 2rem;
     font-weight: 700;
     border-bottom: 2px solid rgba(255, 255, 255, 0.5);
 }
@@ -107,21 +108,20 @@ main {
 
 /* ************************* IMAGES ************************* */
 .mainImage {
+    min-height: 95%;
     max-width: 600px;
     width: 90vw;
-    height: 95%;
     margin: 4.5rem 0 1.5rem 0;
     padding: 0 0 1rem 0;
 }
 
 .parImage {
-    height: 100%;
+    min-height: 100%;
     object-fit: cover;
     border: 3px solid rgba(255, 255, 255, 0.25);
 }
 
 .caroImage {
-    display: block;
     border: 3px solid rgba(255, 255, 255, 0.25);
     border-bottom: 3px solid rgba(255, 255, 255, 0.25);
 }
@@ -145,28 +145,27 @@ h1 {
     text-shadow: 0px 0px 4px rgb(255, 120, 57), 0 0 3px rgba(255, 255, 255, 0.5);
     font-weight: 700;
     border-bottom: 2px solid rgba(48, 48, 48, 0.5);
-    border-radius: 10px;
+    border-radius: 0.75rem;
     margin: 0 1% 1% 1%;
 }
 
 p {
-    font-size: 1.325rem;
+    font-size: 1.075rem;
     font-weight: 700;
-}
-
-.par1,
-.par2 {
-
-    -webkit-text-fill-color: white;
-    -webkit-text-stroke: 1px;
-    color: rgb(0, 0, 0);
-    text-align: justify;
-    text-justify: inter-word;
 }
 
 .heading {
     padding-top: 0.75rem;
     border: none;
+}
+
+.par {
+    -webkit-text-fill-color: white;
+    -webkit-text-stroke: 1px;
+    color: rgb(0, 0, 0);
+    text-shadow: 1px 1px 1px hsl(0, 0%, 15%);
+    text-align: justify;
+    text-justify: inter-word;
 }
 
 .content {
@@ -177,7 +176,7 @@ p {
 .info {
     display: flex;
     justify-content: space-between;
-    padding: 0 15px;
+    padding: 0 1rem;
 }
 
 #muni,
@@ -192,8 +191,28 @@ p {
     margin-bottom: 1rem;
 }
 
-@media (max-width: 1199px) {
-    .info {
-        padding: 0;
+/* ************************* MEDIA QUERIES ************************* */
+
+@media (min-width: 768px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    p {
+        font-size: 1.325rem;
+    }
+}
+
+@media (min-width: 1921px) {
+    h1 {
+        font-size: 3rem;
+    }
+
+    p {
+        font-size: 2rem;
+    }
+
+    .caroImage {
+        min-width: 90vw;
     }
 }
