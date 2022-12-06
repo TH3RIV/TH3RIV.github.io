@@ -43,6 +43,11 @@ p {
     font-size: 2rem;
 }
 
+.rand-activity__heading,
+.rand-movie-show__heading {
+    font-size: 1rem;
+}
+
 .rand-activity__description {
     text-align: center;
 }
@@ -56,13 +61,14 @@ p {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    max-width: 900px;
+    max-width: 800px;
 }
 
 .rand-movie-show__section {
     display: grid;
     place-content: center;
     width: 100%;
+    margin: 0 1rem;
 }
 
 .rand-movie-show__poster {
@@ -79,7 +85,7 @@ p {
     border-bottom: 1px solid hsla(0, 0%, 21%, 0.5);
     text-align: left;
     margin-bottom: 1rem;
-    padding: 1rem 0;
+    padding: 1rem 0.5rem;
 }
 
 .rand-movie-show__info {
@@ -87,6 +93,10 @@ p {
     display: inline-flex;
     gap: 1.5rem;
     font-size: 0.9rem;
+}
+
+.button {
+    margin: 1rem 0;
 }
 
 @media (min-width: 769px) {
