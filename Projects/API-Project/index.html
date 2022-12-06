@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Bored No More!</title>
+
+</head>
+
+<body>
+
+    <!-- <header>
+        <nav>
+
+        </nav>
+    </header> -->
+
+    <main>
+        <h1 class="main-heading heading">STOP BEING BORED!</h1>
+
+        <article class="flex-center-column">
+
+            <section class="rand-activity flex-center-column">
+                <h2 class="rand-activity__heading heading">Here's something you can do to cure your boredom!</h2>
+                <p class="rand-activity__description" id="actDesc"></p>
+                <button class="button" id="actBtn">REROLL THE ACTIVITY</button>
+            </section>
+
+            <section class="rand-movie-show">
+                <h2 class="rand-movie-show__heading heading">Here's a random movie / tv show to help!</h2>
+                <div class="rand-movie-show__main">
+                    <div class="rand-movie-show__section">
+                        <a href="" target="_blank" id="msLink"><img class="rand-movie-show__poster" id="msPoster" src=""
+                                alt="movie poster"></a>
+                    </div>
+                    <div class="rand-movie-show__section">
+                        <h3 class="rand-movie-show__title heading" id="msTitle"></h3>
+                        <p class="rand-movie-show__description" id="msDesc"></p>
+                        <div class="rand-movie-show__info">
+                            <p id="msLang"></p>
+                            <p id="msLength"></p>
+                        </div>
+                        <div class="rand-movie-show__info">
+                            <p id="msRating"></p>
+                            <p id="msDate"></p>
+                        </div>
+                        <button class="button" id="msBtn">REROLL MOVIE / TV SHOW</button>
+                    </div>
+                </div>
+            </section>
+
+        </article>
+
+    </main>
+
+    <footer>
+        <!-- <attribution>
+            <p class="credit"> "This product uses the TMDB API but is not endorsed or certified by TMDB."</p>
+        </attribution> -->
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
