@@ -36,13 +36,6 @@ p {
     width: 100%;
 }
 
-footer {
-    text-align: center;
-    color: var(--clr-bg-semi-light);
-    opacity: 0.5;
-    font-size: 0.7rem;
-}
-
 .flex-center-column {
     display: grid;
     place-content: center;
@@ -131,6 +124,13 @@ footer {
     color: var(--clr-bg-light);
     border: 0.125rem solid var(--clr-bg-light);
     box-shadow: 0 0 0.5rem var(--clr-accents);
+}
+
+.credit {
+    text-align: center;
+    color: var(--clr-bg-semi-light);
+    opacity: 0.5;
+    font-size: 0.7rem;
 }
 
 @media (min-width: 769px) {
