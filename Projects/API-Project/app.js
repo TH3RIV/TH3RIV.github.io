@@ -12,10 +12,10 @@ const msBtn = document.querySelector('#msBtn');
 
 const randMS = async () => {
     let arr = ['movie', 'tv'];
-    let indexRand = Math.floor(Math.random() * arr.length);
-    let index = arr[indexRand];
 
     try {
+        let indexRand = Math.floor(Math.random() * arr.length);
+        let index = arr[indexRand];
         let latest = await axios.get(`https://api.themoviedb.org/3/${index}/latest?api_key=587f7613fd27cf7a55e08375dbfd8ad6&language=en-US`);
         let randID = Math.floor((Math.random() * latest.data.id) + 1);
         let tmdb = await axios.get(`https://api.themoviedb.org/3/${index}/${randID}?api_key=587f7613fd27cf7a55e08375dbfd8ad6&language=en-US`);
