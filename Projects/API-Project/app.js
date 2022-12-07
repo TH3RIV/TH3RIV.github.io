@@ -17,18 +17,23 @@ const randMS = async () => {
         let tmdb = await axios.get(`https://api.themoviedb.org/3/movie/${randID}?api_key=587f7613fd27cf7a55e08375dbfd8ad6&language=en-US`);
         let imdbID = tmdb.data.imdb_id;
 
-        msLink.href = `https://www.imdb.com/title/${imdbID}/`;
-        msPoster.src = `https://image.tmdb.org/t/p/w500${tmdb.data.poster_path}`;
-        msTitle.innerText = `"${tmdb.data.title}"`;
-        msDesc.innerHTML = `<b>Summary:</b> "${tmdb.data.overview}"`;
-        msLang.innerHTML = `<b>Language:</b> ${tmdb.data.spoken_languages[0].english_name}`;
-        msLength.innerHTML = `<b>Length:</b> ${tmdb.data.runtime} min.`;
-        msDate.innerHTML = `<b>Released:</b> ${tmdb.data.release_date}`;
-        msGenre.innerHTML = `<b>Genre:</b> ${tmdb.data.genres[0].name}`;
-        console.log(randID);
+        if (tmdb.data.adult == false) {
+            msLink.href = `https://www.imdb.com/title/${imdbID}/`;
+            msPoster.src = `https://image.tmdb.org/t/p/w500${tmdb.data.poster_path}`;
+            msTitle.innerText = `"${tmdb.data.title}"`;
+            msDesc.innerHTML = `<b>Summary:</b> "${tmdb.data.overview}"`;
+            msLang.innerHTML = `<b>Language:</b> ${tmdb.data.spoken_languages[0].english_name}`;
+            msLength.innerHTML = `<b>Length:</b> ${tmdb.data.runtime} min.`;
+            msDate.innerHTML = `<b>Released:</b> ${tmdb.data.release_date}`;
+            msGenre.innerHTML = `<b>Genre:</b> ${tmdb.data.genres[0].name}`;
+            console.log(randID);
+        }
+        else {
+            randMS();
+        }
     }
     catch (err) {
-        msDesc.innerHTML = `Unexpected error, please try again.`;
+        // msDesc.innerHTML = `Information unavailable, please try again later.`;
         console.log(err);
     }
 }

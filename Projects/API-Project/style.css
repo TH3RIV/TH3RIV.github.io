@@ -1,23 +1,35 @@
 :root {
     --fw-bold: 700;
+
+    --clr-border: hsla(0, 0%, 21%, 0.5);
+    --clr-bg-light: hsl(0, 0%, 90%);
+    --clr-bg-semi-light: hsl(0, 0%, 70%);
+    --clr-bg-dark: hsl(0, 0%, 10%);
 }
 
-body,
+html {
+    background-color: var(--clr-bg-dark);
+}
+
+body {
+    display: grid;
+    place-content: center;
+    gap: 2rem;
+    color: var(--clr-bg-semi-light);
+    padding: 1rem;
+}
+
 main {
     display: grid;
     place-content: center;
     gap: 2rem;
-    padding: 1rem;
 }
 
 article {
     gap: 2rem;
 }
 
-section {
-    width: 100%;
-}
-
+section,
 p {
     width: 100%;
 }
@@ -40,7 +52,9 @@ p {
 
 .main-heading {
     text-align: center;
-    font-size: 2rem;
+    font-size: 3rem;
+    transform: rotate(-12.5deg);
+    margin: 2rem 0;
 }
 
 .rand-movie-show__heading {
@@ -67,11 +81,11 @@ p {
 }
 
 .rand-movie-show__poster {
-    box-shadow: 0.125rem 0.125rem 0.25rem hsla(0, 0%, 0%, 0.25);
+    box-shadow: 0.125rem 0.125rem 0.25rem var(--clr-border);
     border: 0.1875rem solid hsla(0, 0%, 100%, 0.25);
     border-radius: 0.5rem;
     overflow: hidden;
-    max-height: 30rem;
+    max-height: 25rem;
 }
 
 .rand-movie-show__title {
@@ -80,8 +94,8 @@ p {
 }
 
 .rand-movie-show__description {
-    border-top: 0.125rem solid hsla(0, 0%, 21%, 0.5);
-    border-bottom: 0.125rem solid hsla(0, 0%, 21%, 0.5);
+    border-top: 0.125rem solid var(--clr-border);
+    border-bottom: 0.125rem solid var(--clr-border);
     text-align: left;
     margin-bottom: 1rem;
     padding: 1rem 0.5rem;
@@ -94,9 +108,18 @@ p {
     font-size: 0.8rem;
 }
 
-.button {
-    box-shadow: 0.125rem 0.125rem 0.25rem hsla(0, 0%, 0%, 0.25);
+.button,
+.button:visited {
+    background-color: var(--clr-bg-light);
+    color: var(--clr-bg-dark);
+    border: 0.125rem solid var(--clr-bg-semi-light);
     margin: 1rem 0;
+}
+
+.button:hover,
+.button:focus {
+    background-color: var(--clr-bg-dark);
+    color: var(--clr-bg-semi-light);
 }
 
 @media (min-width: 769px) {
@@ -108,7 +131,7 @@ p {
     }
 
     .rand-movie-show__poster {
-        max-height: 45rem;
+        max-height: 40rem;
     }
 
 }
@@ -139,10 +162,7 @@ p {
         font-size: 1.75rem;
     }
 
-    .rand-movie-show__info {
-        font-size: 1.5rem;
-    }
-
+    .rand-movie-show__info,
     .button {
         font-size: 1.5rem;
     }
