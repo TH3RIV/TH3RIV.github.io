@@ -126,6 +126,13 @@ p {
     box-shadow: 0 0 0.5rem var(--clr-accents);
 }
 
+.attribution {
+    text-align: center;
+    color: var(--clr-bg-semi-light);
+    opacity: 0.5;
+    font-size: 0.6rem;
+}
+
 @media (min-width: 769px) {
 
     .rand-movie-show__main {
