@@ -2,20 +2,22 @@
     --fw-bold: 700;
 
     --clr-border: hsla(0, 0%, 21%, 0.5);
-    --clr-bg-light: hsl(0, 0%, 90%);
+    --clr-bg-light: hsl(0, 0%, 85%);
     --clr-bg-semi-light: hsl(0, 0%, 70%);
-    --clr-bg-dark: hsl(0, 0%, 10%);
-}
-
-html {
-    background-color: var(--clr-bg-dark);
+    --clr-bg-dark: hsla(0, 0%, 7.5%);
+    --clr-accents: hsla(272, 55%, 42%, 0.75);
 }
 
 body {
+    background-color: var(--clr-bg-dark);
+    color: var(--clr-bg-semi-light);
+    background-image: url('https://images.unsplash.com/photo-1568436015740-0a0bdc73a2d0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3000&q=80');
+    background-size: cover;
+    background-blend-mode: multiply;
     display: grid;
     place-content: center;
+    min-height: 100vh;
     gap: 2rem;
-    color: var(--clr-bg-semi-light);
     padding: 1rem;
 }
 
@@ -109,17 +111,19 @@ p {
 }
 
 .button,
-.button:visited {
-    background-color: var(--clr-bg-light);
-    color: var(--clr-bg-dark);
+.button:active {
+    background: none;
+    color: var(--clr-bg-semi-light);
     border: 0.125rem solid var(--clr-bg-semi-light);
     margin: 1rem 0;
 }
 
 .button:hover,
 .button:focus {
-    background-color: var(--clr-bg-dark);
-    color: var(--clr-bg-semi-light);
+    outline: none;
+    color: var(--clr-bg-light);
+    border: 0.125rem solid var(--clr-bg-light);
+    box-shadow: 0 0 0.5rem var(--clr-accents);
 }
 
 @media (min-width: 769px) {
@@ -132,6 +136,11 @@ p {
 
     .rand-movie-show__poster {
         max-height: 40rem;
+    }
+
+    .rand-movie-show__info,
+    .button {
+        font-size: 0.9rem;
     }
 
 }
