@@ -8,16 +8,20 @@ const msLength = document.querySelector('#msLength');
 const msDate = document.querySelector('#msDate');
 const msGenre = document.querySelector('#msGenre');
 const msDesc = document.querySelector('#msDesc');
-const msBtn = document.querySelector('#msBtn')
+const msBtn = document.querySelector('#msBtn');
 
 const randMS = async () => {
     try {
-        let latest = await axios.get('https://api.themoviedb.org/3/movie/latest?api_key=587f7613fd27cf7a55e08375dbfd8ad6&language=en-US');
+        const arr = ['movie', 'tv'];
+        let indexRand = Math.floor(Math.random() * arr.length);
+        let index = arr[indexRand];
+        let latest = await axios.get(`https://api.themoviedb.org/3/${index}/latest?api_key=587f7613fd27cf7a55e08375dbfd8ad6&language=en-US`);
+
         let randID = Math.floor((Math.random() * latest.data.id) + 1);
         let tmdb = await axios.get(`https://api.themoviedb.org/3/movie/${randID}?api_key=587f7613fd27cf7a55e08375dbfd8ad6&language=en-US`);
         let imdbID = tmdb.data.imdb_id;
 
-        if (tmdb.data.adult == false) {
+        if (tmdb.status == 200 && tmdb.data.adult === false) {
             msLink.href = `https://www.imdb.com/title/${imdbID}/`;
             msPoster.src = `https://image.tmdb.org/t/p/w500${tmdb.data.poster_path}`;
             msTitle.innerText = `"${tmdb.data.title}"`;
@@ -26,15 +30,12 @@ const randMS = async () => {
             msLength.innerHTML = `<b>Length:</b> ${tmdb.data.runtime} min.`;
             msDate.innerHTML = `<b>Released:</b> ${tmdb.data.release_date}`;
             msGenre.innerHTML = `<b>Genre:</b> ${tmdb.data.genres[0].name}`;
-            console.log(randID);
-        }
-        else {
-            randMS();
+            console.log(`Index: ${index} and ID: ${randID}`);
         }
     }
     catch (err) {
-        // msDesc.innerHTML = `Information unavailable, please try again later.`;
         console.log(err);
+        randMS();
     }
 }
 
