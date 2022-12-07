@@ -43,13 +43,8 @@ p {
     font-size: 2rem;
 }
 
-.rand-activity__heading,
 .rand-movie-show__heading {
     font-size: 1rem;
-}
-
-.rand-activity__description {
-    text-align: center;
 }
 
 .rand-movie-show {
@@ -72,7 +67,11 @@ p {
 }
 
 .rand-movie-show__poster {
-    max-height: 35rem;
+    box-shadow: 0.125rem 0.125rem 0.25rem hsla(0, 0%, 0%, 0.25);
+    border: 0.1875rem solid hsla(0, 0%, 100%, 0.25);
+    border-radius: 0.5rem;
+    overflow: hidden;
+    max-height: 30rem;
 }
 
 .rand-movie-show__title {
@@ -81,8 +80,8 @@ p {
 }
 
 .rand-movie-show__description {
-    border-top: 1px solid hsla(0, 0%, 21%, 0.5);
-    border-bottom: 1px solid hsla(0, 0%, 21%, 0.5);
+    border-top: 0.125rem solid hsla(0, 0%, 21%, 0.5);
+    border-bottom: 0.125rem solid hsla(0, 0%, 21%, 0.5);
     text-align: left;
     margin-bottom: 1rem;
     padding: 1rem 0.5rem;
@@ -92,15 +91,60 @@ p {
     width: 100%;
     display: inline-flex;
     gap: 1.5rem;
-    font-size: 0.9rem;
+    font-size: 0.8rem;
 }
 
 .button {
+    box-shadow: 0.125rem 0.125rem 0.25rem hsla(0, 0%, 0%, 0.25);
     margin: 1rem 0;
 }
 
 @media (min-width: 769px) {
+
     .rand-movie-show__main {
         flex-direction: row;
+        min-width: 800px;
+        max-width: 1200px;
     }
+
+    .rand-movie-show__poster {
+        max-height: 45rem;
+    }
+
+}
+
+@media (min-width: 1921px) {
+
+    .rand-movie-show__main {
+        max-width: 1600px;
+    }
+
+    .main-heading {
+        font-size: 4rem;
+    }
+
+    .rand-movie-show__poster {
+        max-height: 60rem;
+    }
+
+    .rand-movie-show__heading {
+        font-size: 1.625rem;
+    }
+
+    .rand-movie-show__title {
+        font-size: 2.5rem;
+    }
+
+    .rand-movie-show__description {
+        font-size: 1.75rem;
+    }
+
+    .rand-movie-show__info {
+        font-size: 1.5rem;
+    }
+
+    .button {
+        font-size: 1.5rem;
+    }
+
 }
