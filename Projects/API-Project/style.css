@@ -126,11 +126,11 @@ p {
     box-shadow: 0 0 0.5rem var(--clr-accents);
 }
 
-.attribution {
+.credit {
     text-align: center;
     color: var(--clr-bg-semi-light);
     opacity: 0.5;
-    font-size: 0.6rem;
+    font-size: 0.7rem;
 }
 
 @media (min-width: 769px) {
