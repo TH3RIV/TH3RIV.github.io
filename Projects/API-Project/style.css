@@ -14,6 +14,7 @@ body {
     background-image: url('https://images.unsplash.com/photo-1568436015740-0a0bdc73a2d0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3000&q=80');
     background-size: cover;
     background-blend-mode: multiply;
+    background-attachment: fixed;
     display: grid;
     place-content: center;
     min-height: 100vh;
@@ -36,6 +37,10 @@ p {
     width: 100%;
 }
 
+hr {
+    opacity: 0.25;
+}
+
 .flex-center-column {
     display: grid;
     place-content: center;
@@ -52,22 +57,38 @@ p {
     font-weight: var(--fw-bold);
 }
 
-.main-heading {
+.main-heading,
+.main-heading:visited {
+    color: var(--clr-bg-semi-light);
+    text-decoration: none;
     text-align: center;
     font-size: 3rem;
     transform: rotate(-12.5deg);
     margin: 2rem 0;
+    text-shadow: 0 0 3px var(--clr-accents);
 }
 
-.rand-movie-show__heading {
+.main-heading:hover,
+.main-heading:focus {
+    color: var(--clr-bg-light);
+    text-shadow: 0 0 0.5rem var(--clr-accents);
+}
+
+
+.rand-movie-show__heading,
+.rand-book__heading {
     font-size: 1rem;
+    margin-bottom: 1rem;
+    text-decoration: underline var(--clr-bg-semi-light);
 }
 
-.rand-movie-show {
+.rand-movie-show,
+.rand-book {
     text-align: center;
 }
 
-.rand-movie-show__main {
+.rand-movie-show__main,
+.rand-book__main {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -76,14 +97,16 @@ p {
     max-width: 800px;
 }
 
-.rand-movie-show__section {
+.rand-movie-show__section,
+.rand-book__section {
     display: grid;
     place-content: center;
     width: 100%;
     margin: 0 1rem;
 }
 
-.rand-movie-show__poster {
+.rand-movie-show__poster,
+.rand-book__poster {
     box-shadow: 0.125rem 0.125rem 0.25rem var(--clr-border);
     border: 0.1875rem solid hsla(0, 0%, 100%, 0.25);
     border-radius: 0.5rem;
@@ -91,12 +114,14 @@ p {
     max-height: 25rem;
 }
 
-.rand-movie-show__title {
+.rand-movie-show__title,
+.rand-book__title {
     font-size: 1.5rem;
     padding: 1rem 0;
 }
 
-.rand-movie-show__description {
+.rand-movie-show__description,
+.rand-book__description {
     border-top: 0.125rem solid var(--clr-border);
     border-bottom: 0.125rem solid var(--clr-border);
     text-align: left;
@@ -104,7 +129,8 @@ p {
     padding: 1rem 0.5rem;
 }
 
-.rand-movie-show__info {
+.rand-movie-show__info,
+.rand-book__info {
     width: 100%;
     display: inline-flex;
     gap: 1.5rem;
@@ -136,17 +162,20 @@ p {
 
 @media (min-width: 769px) {
 
-    .rand-movie-show__main {
+    .rand-movie-show__main,
+    .rand-book__main {
         flex-direction: row;
         min-width: 800px;
         max-width: 1200px;
     }
 
-    .rand-movie-show__poster {
+    .rand-movie-show__poster,
+    .rand-book__poster {
         max-height: 40rem;
     }
 
     .rand-movie-show__info,
+    .rand-book__info,
     .button {
         font-size: 0.9rem;
     }
@@ -155,31 +184,37 @@ p {
 
 @media (min-width: 1921px) {
 
-    .rand-movie-show__main {
-        max-width: 1600px;
-    }
-
     .main-heading {
         font-size: 4rem;
     }
 
-    .rand-movie-show__poster {
+    .rand-movie-show__main,
+    .rand-book__main {
+        max-width: 1600px;
+    }
+
+    .rand-movie-show__poster,
+    .rand-book__poster {
         max-height: 60rem;
     }
 
-    .rand-movie-show__heading {
+    .rand-movie-show__heading,
+    .rand-book__heading {
         font-size: 1.625rem;
     }
 
-    .rand-movie-show__title {
+    .rand-movie-show__title,
+    .rand-book__title {
         font-size: 2.5rem;
     }
 
-    .rand-movie-show__description {
+    .rand-movie-show__description,
+    .rand-book__description {
         font-size: 1.75rem;
     }
 
     .rand-movie-show__info,
+    .rand-book__info,
     .button {
         font-size: 1.5rem;
     }

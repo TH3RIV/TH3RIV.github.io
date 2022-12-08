@@ -55,6 +55,46 @@ msBtn.addEventListener('click', async function (e) {
     randMS();
 })
 
+// **************** MOVIE / SHOW ****************
+
+const bPoster = document.querySelector('#bPoster');
+const bLink = document.querySelector('#bLink');
+const bTitle = document.querySelector('#bTitle');
+const bDesc = document.querySelector('#bDesc');
+const bAuthor = document.querySelector('#bAuthor');
+const bPubl = document.querySelector('#bPubl');
+const bGenre = document.querySelector('#bGenre');
+const bLength = document.querySelector('#bLength');
+const bBtn = document.querySelector('#bBtn');
+
+const randB = async () => {
+    let randID = Math.floor((Math.random() * 35000000) + 1000000);
+    let olID = `OLID:OL${randID}M`;
+    let oldb = await axios.get(`https://openlibrary.org/api/books?bibkeys=${olID}&format=json&jscmd=data`);
+
+    try {
+        bLink.href = `https://openlibrary.org/books/OL${randID}M/`;
+        bPoster.src = oldb.data[olID].cover.large;
+        bTitle.innerText = `"${oldb.data[olID].title}"`;
+        // bDesc.innerHTML = `<b>First sentence:</b> "${oldb.data[olID].excerpts[0].text}"`;
+        bAuthor.innerHTML = `<b>Author:</b> ${oldb.data[olID].authors[0].name}`;
+        bPubl.innerHTML = `<b>Publisher:</b> ${oldb.data[olID].publishers[0].name}`;
+        bGenre.innerHTML = `<b>Genre / Subject:</b> ${oldb.data[olID].subjects[0].name}`;
+        bLength.innerHTML = `<b>Pages:</b> ${oldb.data[olID].number_of_pages}`;
+        console.log(`Open Library ID: ${olID}`);
+    }
+    catch (err) {
+        randB()
+        console.log(err);
+    }
+}
+
+bBtn.addEventListener('click', async function (e) {
+    e.preventDefault();
+    randB();
+})
+
 // **************** EXECUTE ON LOAD ****************
 
 randMS();
+randB();
