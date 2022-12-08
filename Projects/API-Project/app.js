@@ -34,7 +34,7 @@ const randMS = async () => {
         else if (ctg === 'tv') {
             msLink.href = `https://www.themoviedb.org/tv/${randID}-${tmdb.data.original_title}`;
             msPoster.src = `https://image.tmdb.org/t/p/w500${tmdb.data.poster_path}`;
-            msTitle.innerText = `"${tmdb.data.original_name}"`;
+            msTitle.innerText = `"${tmdb.data.name}"`;
             msDesc.innerHTML = `<b>Summary:</b> "${tmdb.data.overview}"`;
             msLang.innerHTML = `<b>Language:</b> ${tmdb.data.spoken_languages[0].english_name}`;
             msLength.innerHTML = `<b>Length:</b> ${tmdb.data.episode_run_time} min.`;
