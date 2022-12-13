@@ -18,7 +18,7 @@ const rr = document.querySelector('#rr');
 // GET THE BUTTONS TO INCREASE AND RESET THE SCORE:
 
 p1.addEventListener('click', function () {
-    scoreOne = scoreOne + 1;
+    scoreOne += 1;
     h1.innerText = `${scoreOne} - ${scoreTwo}`;
     if (scoreOne == inputVal && scoreOne > scoreTwo) {
         h2.innerText = "Player One WINS!";
@@ -29,7 +29,7 @@ p1.addEventListener('click', function () {
 });
 
 p2.addEventListener('click', function () {
-    scoreTwo = scoreTwo + 1;
+    scoreTwo += 1;
     h1.innerText = `${scoreOne} - ${scoreTwo}`;
     if (scoreTwo == inputVal && scoreTwo > scoreOne) {
         h2.innerText = "Player Two WINS!";
