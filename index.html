@@ -63,7 +63,7 @@
             <img class="me" src="Placeholders/me.jpg" alt="a beautiful picture of Riv">
         </div>
 
-        <div class="container-fluid" id="caro">
+        <div class="container-fluid" class="caro" id="caro">
             <h1 class="text-center">PAST PROJECTS</h1>
             <div id="carouselExampleInterval" class="carousel slide carousel-fade" data-bs-ride="carousel">
                 <div class="carousel-inner">
@@ -109,9 +109,9 @@
             </div>
         </div>
 
-        <div id="contact-form">
-            <p id="sent"></p>
-            <form id="contactForm" autocomplete="off" method="post"
+        <div class="contact-form" id="contact-form">
+            <p class="sent" id="sent"></p>
+            <form class="contactForm" id="contactForm" autocomplete="off" method="post"
                 action="https://public.herotofu.com/v1/4ba95b40-7b00-11ed-ae39-e5d94069e299">
                 <div class="contact-heading">
                     <h3>Contact</h3>
@@ -119,12 +119,13 @@
                         id="btnClose"></button>
                 </div>
                 <label for="name">Name:</label>
-                <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                <input type="text" class="name" id="name" name="name" placeholder="Enter your name" required>
                 <label for="email">Email:</label>
-                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                <input type="email" class="email" id="email" name="email" placeholder="Enter your email" required>
                 <label for="message">Message:</label>
-                <textarea id="message" name="message" rows="5" placeholder="Enter your message" required></textarea>
-                <button type="submit" id="formSubmit">Send</button>
+                <textarea class="message" id="message" name="message" rows="5" placeholder="Enter your message"
+                    required></textarea>
+                <button type="submit" class="formSubmit" id="formSubmit">Send</button>
             </form>
         </div>
 
