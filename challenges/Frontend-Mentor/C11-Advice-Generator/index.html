@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <!-- FONTS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap" rel="stylesheet">
+
+  <!-- STYLES -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+
+  <title>Frontend Mentor | Advice generator app</title>
+
+</head>
+
+<body>
+
+  <div class="container">
+    <h1 class="container__advice-number">Advice #<span id="adviceNumber"></span></h1>
+
+    <p class="container__advice-text" id="adviceText"></p>
+
+    <picture class="container__divider">
+      <source srcset="images/pattern-divider-desktop.svg" media="(min-width: 525px)" />
+      <img src="images/pattern-divider-mobile.svg" alt="" />
+    </picture>
+
+    <button type="button" class="container__button" id="btn"><img src="images/icon-dice.svg"
+        alt="button to generate a new advice"></button>
+  </div>
+
+  <footer>
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="https://www.frontendmentor.io/profile/TH3RIV" target="_blank">TH3RIV</a>.
+    </div>
+  </footer>
+
+  <!-- JavaScript -->
+  <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+  <script src="app.js"></script>
+</body>
+
+</html>
