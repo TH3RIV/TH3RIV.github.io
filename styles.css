@@ -27,8 +27,8 @@ html::-webkit-scrollbar {
 }
 
 body {
-    background-color: var(--clr-background);
-    background-image: url(https://images.unsplash.com/photo-1603346133929-24265debae88?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1974&q=80);
+    background: radial-gradient(circle at 24.1% 68.8%, rgb(50, 50, 50) 0%, rgb(0, 0, 0) 99.4%);
+    background-blend-mode: darken;
     object-fit: fill;
     background-attachment: fixed;
 }
@@ -178,7 +178,7 @@ input:-webkit-autofill {
 }
 
 .contact-form {
-    background-image: url(https://images.unsplash.com/photo-1603346133929-24265debae88?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1974&q=80);
+    background: radial-gradient(circle at 24.1% 68.8%, rgb(50, 50, 50) 0%, rgb(0, 0, 0) 99.4%);
     background-size: cover;
     z-index: 9999;
     display: none;
