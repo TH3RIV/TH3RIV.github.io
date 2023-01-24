@@ -96,7 +96,18 @@ li {
 @media (min-width: 968px) {
 
     h1 {
+        font-size: 2.5rem;
+        text-align: center;
         padding: 1rem 2rem;
+    }
+
+    h2 {
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    p {
+        font-size: 1.25rem;
     }
 
     .columns {
