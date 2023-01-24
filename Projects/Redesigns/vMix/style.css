@@ -26,17 +26,17 @@ footer {
 }
 
 h1 {
-    font-size: 2.5rem;
-    text-align: center;
-}
-
-h2 {
     font-size: 2rem;
     text-align: center;
 }
 
+h2 {
+    font-size: 1.5rem;
+    text-align: center;
+}
+
 p {
-    font-size: 1.25rem;
+    font-size: 1rem;
 }
 
 li {
@@ -51,7 +51,8 @@ li {
 .container {
     min-width: 80vw;
     border: 3px solid rgba(255, 255, 255, 0.25);
-    background-image: linear-gradient(to top, #e6e9f0 0%, #eef1f5 100%);
+    background-image: radial-gradient(73% 147%, #EADFDF 59%, #ECE2DF 100%), radial-gradient(91% 146%, rgba(255, 255, 255, 0.50) 47%, rgba(0, 0, 0, 0.50) 100%);
+    background-blend-mode: screen;
     box-shadow: 0.25rem 0.25rem 0.25rem hsla(0, 0%, 0%, 0.25);
 }
 
