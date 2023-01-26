@@ -6,19 +6,6 @@ const control = document.querySelector('#control');
 const others = document.querySelector('#others');
 const info = document.querySelector('#info');
 
-// about.addEventListener('click', function (e) {
-//     e.preventDefault();
-//     info.innerHTML = `
-//     <h2>THE ONLY PLACE TO BUILD AND RENT YOUR VMIX MACHINE</h2>
-//     <p>Whether you are looking for a simple one camera vMix setup, or a stream that requires multiple
-//         input
-//         and output options, vMix Rental can provide a tailored rig that is perfect for your event. With
-//         a
-//         host of capture cards, audio options, control options and more, your ideal vMix setup is waiting
-//         to
-//         be created…</p>`;
-// });
-
 included.addEventListener('click', function (e) {
     e.preventDefault();
     info.innerHTML = `
