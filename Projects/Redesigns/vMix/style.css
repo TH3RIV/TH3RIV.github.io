@@ -93,9 +93,9 @@ li {
 .information {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     gap: 1rem;
     padding: 1.5rem;
+    min-height: 15rem;
 }
 
 @media (min-width: 968px) {
