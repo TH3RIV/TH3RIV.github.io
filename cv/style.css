@@ -31,6 +31,7 @@ h3 {
 .intro {
     display: grid;
     place-content: center;
+    font-size: 16px;
 }
 
 .photo {
