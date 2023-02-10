@@ -38,6 +38,7 @@ main {
     justify-content: center;
     flex-direction: column;
     margin: 0 auto;
+    padding: 1rem;
 }
 
 ul,
@@ -130,6 +131,33 @@ p {
     border-radius: 5% 15%;
     padding: 0;
     margin: 0;
+}
+
+.resume {
+    flex-wrap: wrap;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    margin: 2rem 0;
+}
+
+.resume>p {
+    margin: 0;
+}
+
+.btn-warning {
+    min-width: 8rem;
+    border-radius: 0.25rem;
+    font-weight: 600;
+    color: hsl(0, 0%, 15%);
+    background-color: var(--clr-link-heading);
+}
+
+.btn-warning:hover,
+.btn-warning:focus,
+.btn-warning:active {
+    box-shadow: 0 0 1rem hsl(0, 0%, 0%);
 }
 
 /* ********* CAROUSEL ********* */
