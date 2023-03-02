@@ -67,7 +67,8 @@ h3 {
 }
 
 .links>a {
-    min-width: 49.5%;
+    min-width: 7.5rem;
+    width: 100%;
     border-radius: 0.125rem;
     box-shadow: 0.125rem 0.125rem 0.25rem hsl(0, 0%, 25%);
 }
