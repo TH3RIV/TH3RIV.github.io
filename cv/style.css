@@ -33,6 +33,10 @@ h3 {
     place-content: center;
 }
 
+.col>p {
+    min-width: 18rem;
+}
+
 .photo {
     max-width: 17.5rem;
     border: 0.25rem solid hsla(0, 0%, 75%, 0.25);
